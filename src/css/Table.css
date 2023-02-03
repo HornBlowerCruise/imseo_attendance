@@ -1,0 +1,72 @@
+table {
+    /* margin: 100px; */
+    border: 2px solid black;
+    border-collapse: collapse;
+    table-layout:fixed;
+    width:810px;
+    font-size:18px;
+    
+  }
+  th,
+  td {
+    border: 1px solid black;
+    height:35px;
+  }
+
+  .t1{
+    background-color: rgb(228, 239, 220);
+    font-weight : bold;
+    height: 60px;
+  }
+
+  .t2{
+    background-color: rgb(219, 225, 241);
+    border: 2px solid black;
+    border-left-style: none;
+    border-right-style: none;
+  }
+
+  .t3{
+    background-color: rgb(219, 225, 241);
+    font-weight : bold;
+    background-color: rgb(219, 225, 241);
+    border: 2px solid black;
+    /* border-left-style: none;
+    border-right-style: none; */
+  }
+
+  .t4{
+    background-color: rgb(219, 225, 241);
+  }
+
+  .t5{
+    table-layout:fixed;
+    width:100px;
+  }
+
+  .t6{
+    background-color: rgb(254, 242, 210);
+  }
+
+  .onlineColor{
+    background-color: rgb(182, 198, 229);
+  }
+
+  .t7{
+    border: 2px solid black;
+    /* border-width: 2px 2px 1px 2px; */
+    /* border-left-style: none; */
+    /* border-right-style: none; */
+    /* border-bottom-style: none; */
+  }
+
+    .t8{
+      border: 1px solid black;
+      border-width: 1px 1px 1px 2px;
+    }
+/* 100px씩, 전체화면일때 (9칸임)*/
+/*  60px씩, 60px under*/
+
+.hidden {
+  display: none;
+}

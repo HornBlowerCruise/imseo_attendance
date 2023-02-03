@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+
+
+.divider {
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.divider2 {
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+  position: fixed;
+  top: 50%;
+  z-index: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+/* 공통 레이아웃 */
+.containerHG{
+  display:flex;
   flex-direction: column;
-  align-items: center;
+  /* height:865px; */
+  width: 100%;
+  overflow-x:hidden; 
+  /* text-align: center; */
+  /* padding-top:  */
+
+  
+}
+
+header{
+  /* border: 1px solid gray; */
+  /* height: 13.16vh; */
+  height: 90px;
+  align-self: center;
+  
+}
+
+footer{
+  /* border: 1px solid gray; */
+  /* height: 13.16vh; */
+  height: 90px;
+  align-self: center;
+  
+}
+
+
+.downwardArrow {
+  position:relative;
+  bottom:-30px;
+}
+
+.content {
+  display: flex;
+  /* height:570px; */
+  /* height:5000px; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.content nav {
+  /* border:1px solid gray;   */
+  /* flex: 2.435; */
+  flex-shrink: 1;
+  /* flex-basis:8px; */
+  /* flex-grow: 1; */
+  width: 8px;
+  /* width: 108px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content aside {
+  /* border:1px solid gray;   */
+  /* flex: 5.5; */
+  flex-shrink: 1;
+  /* flex-basis:8px; */
+  width: 8px;
+  /* width: 300px; */
+  /* flex-grow: 1; */
+}
+
+nav, aside {
+  /* flex-basis: 150px; */
+  /* flex-shrink: 1; */
+}
+
+.content main {
+  /* border: 1px solid gray; */
+  /* flex: 18; */
+  flex-shrink:0;
+  flex-basis: 600px;
+  /* width: 328px; */
+  flex-grow: 1;
+  align-items: flex-start;
+  /* text-align: center; */
+  /* justify-content: center; */
+}
+/* 공통 레이아웃 종료 */
+
+@media (min-width: 650px) {
+.content main {
+  flex-basis: 850px;
+  flex-grow: 0;
+}
+
+.content nav {
+  flex-shrink: 1;
+  flex-basis:8px;
+  flex-grow: 1;
+}
+
+.content aside {
+  flex-shrink: 1;
+  flex-basis:8px;
+  flex-grow: 1;
+}
+}
+
+.btnDesign {
+  /* margin: 0; */
+  margin-bottom: 10px;
+  padding: 2px 0px 5px 0px;
+  height:33px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  /* text-decoration: none; */
+  background-color: lightgrey;
+  display: inline-block;
+  width: 100px;
+
+  /* border: none; */
+  border-width:1px;
+  border-color: grey;
+  /* border-radius: 25px; */
 }

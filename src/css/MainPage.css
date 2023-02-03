@@ -1,0 +1,36 @@
+.container2  {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  width: 600px;
+  margin:auto;
+  place-items: center;
+  text-align: left;
+}
+
+.pageContainer {
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 100px;
+}
+
+.userInfo {
+  text-align: right;
+  padding-bottom:30px;
+  padding-right:40px;
+  /* align-items:right; */
+}
+
+.inlineButton {
+  display: inline;
+}
+
+.borderlessTable {
+  border: 0px solid black;
+  padding-right: 20px;
+}
+
+.borderlessTable2 {
+  border: 0px solid black;
+  width: 500px;
+  margin: auto;
+}
