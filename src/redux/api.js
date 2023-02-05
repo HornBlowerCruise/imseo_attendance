@@ -2,8 +2,8 @@ import axios from "axios";
 
 const api = axios.create({
     // baseURL:"https://kagomepizza-ragtime.shop",
-    baseURL:"http://localhost:9090/api/v1",
-    // baseURL:"https://mskimseo.shop",
+    // baseURL:"http://localhost:9090/api/v1",
+    baseURL:"https://mskimseo.shop/api/v1",
     headers:{"Content-Type":"application/json"}
 })
 
